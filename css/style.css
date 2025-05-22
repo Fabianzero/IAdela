@@ -88,7 +88,7 @@ width: 600px;
     "texto1 texto1 texto1";
     grid-template-rows: 10px;
     grid-template-columns:40% 40% 20%;
-    grid-template-rows:150px 20px;
+    grid-template-rows:120px 20px;
     font-family: "DM Sans", sans-serif;
     padding-bottom: 10px;
 }
@@ -328,7 +328,7 @@ width: 500px;
     align-items: center;
     color: white;
     font-family: "DM Sans", sans-serif;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
 }
 
 .andivs div {
@@ -338,12 +338,11 @@ width: 500px;
 
 .andivs div h3{
     background-color: #221E39;
-    padding: 15px 0 15px 0;
-    height: 30px;
     width: 120%;
     border-radius: 10px;
     text-align: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .maincontacto {
