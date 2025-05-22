@@ -33,6 +33,7 @@ header {
     background-color: #C8D0DD;
     color: #221E39;
     padding: 20px;
+    background-size: 250px;
     display: grid;
     grid-template-areas: 
     "logo nav";
@@ -41,7 +42,6 @@ header {
     align-items: center;
 
 }
-
 
 header img{
     grid-area: logo;
@@ -57,6 +57,7 @@ header nav {
 header nav ul {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     
     }
 
@@ -64,6 +65,12 @@ header nav ul a {
     text-decoration: none;
     font-size: 1.5rem;
     color: #221E39;
+}
+.headerindex nav ul a {
+    font-size: medium;
+}
+.headerindex nav ul {
+    justify-content:space-between ;
 }
 
 
@@ -185,8 +192,6 @@ body{
         }
 
 
-
-
 .mainea {
     background-image: url(../medios/clinica.jpg);
     background-position: center;
@@ -213,52 +218,20 @@ body{
     height: 500px;
     width: 550px;
     border-radius: 6px;
-
-}
-.caract {
-    grid-area: caract;
-    color:white;
-    text-align: center;
-    justify-content: center;
 }
 
-.voluntario {
-    grid-area: voluntario;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    justify-content: center;
-    margin-left: 30px;
-    color: white;
-}
 .voluntario img {
     width: 180px;
     height: 180px;
     text-align: center;
     justify-content: center;
 }
-.confidencial {
-    grid-area: confidencial;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    justify-content: center;
-    color: white;
-}
+
 .confidencial img {
     width: 180px;
     height: 180px;
     text-align: center;
     justify-content: center;
-}
-.pasivo {
-    grid-area: pasivo;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    justify-content: center;
-    margin-left: 30px;
-    color: white;
 }
 
 .pasivo img {
@@ -269,19 +242,17 @@ body{
     margin-left: 20px;
 
 }
-.no-punitivo {  
-    grid-area: no-punitivo;
-    width: 200px;
-    height: 200px;
-    text-align: center;
-    justify-content: center;
-    color: white;
-}
+
 .no-punitivo img {
     width: 180px;
     height: 180px;
     text-align: center;
     justify-content: center;
+}
+
+.g-col-6 {
+    background-color: #221E39;
+    color: white;
 }
 
 /*Documentos */
