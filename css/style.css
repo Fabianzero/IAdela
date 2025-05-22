@@ -1,0 +1,399 @@
+
+
+/* Paleta de colores
+
+header: #C8D0DD
+Texto: blanco
+Footer: #221E39
+Texto: blanco
+
+Main y fondo:#FDF8F8
+Texto: 221E39
+
+Links: 
+Header: #221E39 
+Footer: Blanco
+
+Otros: #696780
+
+*/
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+/*   font-family: "DM Sans", sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*header */
+header {
+    background-color: #C8D0DD;
+    color: #221E39;
+    padding: 20px;
+    display: grid;
+    grid-template-areas: 
+    "logo nav";
+    grid-template-columns: 20% 80%;
+    font-family: "DM Sans", sans-serif;
+    align-items: center;
+
+}
+
+
+header img{
+    grid-area: logo;
+    max-width: 200px;
+    width: 100%;
+    margin: 8px;
+}
+
+header nav {
+    grid-area: nav;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    
+    }
+
+header nav ul a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #221E39;
+}
+
+
+/* Main Index */
+
+main img {
+object-fit: cover;
+height: 300px;
+width: 600px;
+}
+
+/* Footer */
+.contenedor-grid {
+    background-color: #221E39;
+    display: grid;
+    grid-template-areas: 
+    "links links logo"
+    "texto1 texto1 texto1";
+    grid-template-rows: 10px;
+    grid-template-columns:40% 40% 20%;
+    grid-template-rows:150px 20px;
+    font-family: "DM Sans", sans-serif;
+    padding-bottom: 10px;
+}
+
+.grid-links {
+    padding: 20px 0 20px 40px;
+    grid-area: links;
+    font-family: "DM Sans", sans-serif;
+
+}
+.grid-links a {
+       text-decoration: none;
+}
+.grid-logo {
+    padding: 20px;
+    grid-area: logo;
+}
+
+.grid-texto {
+    grid-area: texto1;
+    text-align: center;
+    font-family: "DM Sans", sans-serif;
+}
+
+footer { color: white;}
+footer a {color: white;}
+
+/* Body */
+body{
+    background-color: #FDF8F8;
+}
+
+/* Página de eventos Adversos */
+        .container {
+            background:#221E39 ;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            font-family: "DM Sans", sans-serif;
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: white ;
+            font-family: "DM Sans", sans-serif;
+        }
+
+        label {
+            font-weight: 600;
+            display: block;
+            margin-top: 10px;
+            color: white;
+            font-family: "DM Sans", sans-serif;
+            width: 95%;
+        }
+
+        input, textarea, select {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            font-family: "DM Sans", sans-serif;
+        }
+
+        input:focus, textarea:focus, select:focus {
+            border-color: #0072ff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 114, 255, 0.3);
+            font-family: "DM Sans", sans-serif;
+        }
+
+        .radio-group {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 10px;
+            font-family: "DM Sans", sans-serif;
+        }
+
+        button {
+            width: 95%;
+            background: #0072ff;
+            color: white;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            margin-top: 15px;
+            font-family: "DM Sans", sans-serif;
+        }
+
+
+
+
+.mainea {
+    background-image: url(../medios/clinica.jpg);
+    background-position: center;
+    background-size: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.eainformacion {
+    display: grid;
+    grid-template-areas: 
+    "caract caract"
+    "voluntario confidencial"
+    "pasivo no-punitivo";
+    grid-template-columns: 1fr 1fr;
+    font-family: "DM Sans", sans-serif;
+    text-align: center;
+    justify-content: center;
+    background-color: #221E39;
+    align-items: center;
+    gap: 5px;
+    height: 500px;
+    width: 550px;
+    border-radius: 6px;
+
+}
+.caract {
+    grid-area: caract;
+    color:white;
+    text-align: center;
+    justify-content: center;
+}
+
+.voluntario {
+    grid-area: voluntario;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 30px;
+    color: white;
+}
+.voluntario img {
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    justify-content: center;
+}
+.confidencial {
+    grid-area: confidencial;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+.confidencial img {
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    justify-content: center;
+}
+.pasivo {
+    grid-area: pasivo;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 30px;
+    color: white;
+}
+
+.pasivo img {
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 20px;
+
+}
+.no-punitivo {  
+    grid-area: no-punitivo;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+.no-punitivo img {
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    justify-content: center;
+}
+
+/*Documentos */
+.documentos {   
+    background-image: url(../medios/clinica.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    color: white;
+}
+.documentos h2 {
+    margin-top: 150px;
+    justify-items: auto;
+    backdrop-filter: blur(0.4rem);
+
+}
+::selection {
+    color: white;
+    background-color: #221E39;
+}
+
+
+.buscadord .search {
+    width: 100%;
+    position:relative
+}
+
+.buscadord {
+width: 500px;
+}
+
+.search input {
+    color: white;
+    height: 60px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 100px;
+    font-size: 18px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    background-color: #221E39;
+    
+}
+::placeholder {
+    color: white;
+}
+.search.active input {
+    border-radius: 5px 5px 0 0;
+
+}
+.search .autocomplete {
+    color: white;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+    background-color: #221E39;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1) ;
+}
+
+
+/* Acreditación nacional */
+
+.andivs {
+    background-image: url(../medios/clinica\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+}
+
+.andivs div {
+    margin: 150px 0 150px 0;
+    justify-content: center;
+}
+
+.andivs div h3{
+    background-color: #221E39;
+    padding: 15px 0 15px 0;
+    height: 30px;
+    width: 120%;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.maincontacto {
+    display: flex;
+    justify-content: center;
+    background-image: url(../medios/backcontacto.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.contacto {
+    background:#221E39 ;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    font-family: "DM Sans", sans-serif;
+    margin: 20px;
+    color: white;
+}
+
+

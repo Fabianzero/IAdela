@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Adversos</title>
+  <!--Css-->
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+ 
+    <header>
+        <!--Logo-->
+            <img src="../medios/Logo.png" alt="">
+
+        <!--navegador-->
+            <nav>
+             <ul>
+                <a href="../index.html"> Home </a> 
+                <a href="#">Eventos Adversos</a>
+                <a href="/paginas/documentos.html">Repositorio</a>
+                <a href="/paginas/acreditacion.html">Acreditación</a>
+                <a href="/paginas/gestion.html">Gestión</a>
+                <a href="/paginas/iaas.html">IAAS</a>
+              </ul>
+             </nav>
+
+ 
+         </header>
+
+
+<Main class="mainea">
+
+     <div class="container">
+        <h2>Notificación de Evento Adverso</h2>
+        <form action="submit" method="post">
+
+                <label for="anonimo">¿Reporte anónimo?</label>
+            <div class="radio-group">
+                <input type="radio" id="anonimo_si" name="anonimo" value="si" required>
+                <label for="anonimo_si">Sí</label>
+                
+                <input type="radio" id="anonimo_no" name="anonimo" value="no">
+                <label for="anonimo_no">No</label>
+
+            </div>
+                <label for="reportador">Nombre de quien reporta:</label>
+                <input type="text" id="reportador" name="reportador">
+
+                <label for="" class="estamento">Estamento</label>
+                <select name="" class="seleccione" id="" required>
+                    <option value="">Enfermería</option>
+                    <option value="">Médico</option>
+                    <option value="">Técnico Paramédico</option>
+                    <option value="">Matron(a)</option>
+                    <option value="">Técnologo Médico</option>
+                    <option value="">Nutricionista</option>
+                    <option value="">Kinesiólogo</option>
+                    <option value="">Químico Farmaceutico</option>
+                    <option value="">Otro</option>
+                </select>
+                
+                    <label for="" class="servicioi">Servicio que identifíca</label>
+                    <select name="" class="seleccions-grid" id="" required>
+                    <option value="">MedicoQuirúrgico</option>
+                    <option value="">UTI</option>
+                    <option value="">UPCA</option>
+                    <option value="">UPCP</option>
+                    <option value="">Endoscopia</option>
+                    <option value="">Recuperación</option>
+                    <option value="">Pabellón</option>
+                    <option value="">Hospitalización Transitoria</option>
+                    <option value="">Salud Mental</option>
+                    <option value="">Laboratorio</option>
+                    <option value="">Pediatría</option>
+                    <option value="">Farmacia</option>
+                    <option value="">Imágenes</option>
+                    <option value="">Admisión</option>
+                    <option value="">Pabellón Maternidad</option>
+                    <option value="">Pabellón Hemodinámia</option>
+                    <option value="">Maternidad</option>
+                    <option value="">Neonatología</option>
+                    <option value="">Urgencias</option>
+                    </select>
+
+                    <label for="" class="serviciodsg-grid">Servicio Donde se generó Evento</label>
+                    <select name="" class="seleccionsg-grid" id="">
+                    <option value="">MedicoQuirúrgico</option>
+                    <option value="">UTI</option>
+                    <option value="">UPCA</option>
+                    <option value="">UPCP</option>
+                    <option value="">Endoscopia</option>
+                    <option value="">Recuperación</option>
+                    <option value="">Pabellón</option>
+                    <option value="">Hospitalización Transitoria</option>
+                    <option value="">Salud Mental</option>
+                    <option value="">Laboratorio</option>
+                    <option value="">Pediatría</option>
+                    <option value="">Farmacia</option>
+                    <option value="">Imágenes</option>
+                    <option value="">Admisión</option>
+                    <option value="">Pabellón Maternidad</option>
+                    <option value="">Pabellón Hemodinámia</option>
+                    <option value="">Maternidad</option>
+                    <option value="">Neonatología</option>
+                    <option value="">Urgencias</option>
+                    </select>
+
+            <label for="fecha">Fecha del Evento:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora del evento:</label>
+            <input type="time" name="hora" id="hora" required>
+
+            <label for="descripcion">Descripción del Evento:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+            <label for="acciones">Acciones tomadas:</label>
+            <textarea id="acciones" name="acciones" rows="3"></textarea>
+
+            <label for="sugerencias" class="spe-grid" >Sugerencias para la prevención del evento</label>
+            <textarea name="sugerencias" rows="3" id="">Sugerencias para evitar que suceda nuevamente este evento</textarea>
+
+            <button type="submit">Enviar Reporte</button>
+        </form>
+    </div>
+
+
+    <div class=eainformacion>
+            <div class="caract">
+                <h2 >Características del sistema de Notificación
+             </h2>
+            </div>
+            <div class="voluntario">
+                <h3>Voluntario</h3>
+                <img src="../medios/Voluntariopng.png" alt="">
+            </div>
+            <div class="confidencial">
+                <h3>Confidencial</h3>
+                <img src="../medios/Confidencial.png" alt="">
+            </div>
+            <div class="pasivo">
+                <h3>Pasivo</h3>
+                <img src="../medios/Pasivo.png" alt="">
+            </div>
+            <div class="no-punitivo">
+                <h3>No Punitivo</h3>
+                <img src="../medios/No Punitovo.png" alt="">
+            </div>
+    </div>
+</body>
+
+
+
+    </Main>
+
+
+    <Footer>
+        <section class="contenedor-grid">
+             <nav class="grid-links">
+                <h3>Links de Interés</h3>
+                <li><a href="">Clinica Universidad de los Andes</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Soporte</a></li>
+                <li><a href="">Quienes Somos</a></li>
+             </nav>
+
+            <div class="grid-logo"> Logo IAdela
+            <img src="" alt="">
+            </div> <p class="grid-texto"> 2025 Dirección Médica - Subdirección de Calidad </p>
+
+        </section>  
+    </Footer>
+
+</html>
