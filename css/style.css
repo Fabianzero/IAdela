@@ -30,6 +30,10 @@ Otros: #696780
     box-sizing: border-box;
 }
 
+body  {
+    background-color: #221E39;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -37,6 +41,7 @@ header {
     padding: 15px 20px;
     font-family: "DM Sans", sans-serif;
     flex-wrap: wrap;
+    background-color: #C8D0DD;
 }
 
 .logo img {
@@ -88,11 +93,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color:#221E39;
     flex-wrap: wrap;
     font-family: "DM Sans", sans-serif;
     width: 100%;
+    height: max-content;
+    margin-top: 30px;
 }
 
 .footer-logo img {
@@ -130,9 +138,8 @@ footer {
 }
 
 /* Body */
-body{
-    background-color: #FDF8F8;
-}
+
+
 
 /* Página de eventos Adversos */
         .container {
@@ -336,7 +343,6 @@ body{
     color: white;
     font-family: "DM Sans", sans-serif;
     flex-wrap: wrap;
-    height: 500px;
 }
 
 .andivs div {
