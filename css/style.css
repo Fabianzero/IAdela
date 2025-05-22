@@ -98,19 +98,23 @@ width: 600px;
 .grid-links a {
        text-decoration: none;
 }
-.grid-logo {
-    padding: 20px;
-    grid-area: logo;
-}
 
 .grid-texto {
     grid-area: texto1;
     text-align: center;
     font-family: "DM Sans", sans-serif;
 }
+.logoia {
+    height: 90px;
+    width: 100px;
+    grid-area: logo;
+    padding: 10px;
+}
 
 footer { color: white;}
 footer a {color: white;}
+
+
 
 /* Body */
 body{
