@@ -36,6 +36,7 @@ header {
     align-items: center;
     padding: 15px 20px;
     font-family: "DM Sans", sans-serif;
+    flex-wrap: wrap;
 }
 
 .logo img {
@@ -49,11 +50,13 @@ header {
     margin-left: 20px;
     font-size: 18px;
     font-family: "DM Sans", sans-serif;
+    flex-wrap: wrap;
 }
 
 .nav-links {
     display: flex;
     font-family: "DM Sans", sans-serif;
+    flex-wrap: wrap;
 }
 
 /* Responsividad */
@@ -192,7 +195,7 @@ body{
 .mainea {
     background-image: url(../medios/clinica.jpg);
     background-position: center;
-    background-size: auto;
+    background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -279,10 +282,6 @@ body{
 .buscadord .search {
     width: 100%;
     position:relative
-}
-
-.buscadord {
-width: 500px;
 }
 
 .search input {
