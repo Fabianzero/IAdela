@@ -385,6 +385,9 @@ footer img {
   outline: none;
 }
 
+.botones a {
+  text-decoration: none;
+}
 
 
 
@@ -415,4 +418,24 @@ footer img {
     width: 200px;
 }
 
+.mapa { 
+    padding: 20px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    font-family: "DM Sans", sans-serif;
+    margin: 20px;
+    color: white;
+}
 
+.powerbi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.powerbi div {
+  padding: 10px;
+}
