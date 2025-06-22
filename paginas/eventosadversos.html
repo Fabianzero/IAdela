@@ -14,25 +14,26 @@
 <body>
  
     <header>
-    <div class="logo">
+        <div class="logo">
         <img src="../medios/Logo.png" alt="">
-    </div>
-    <nav class="nav-links">
+        </div>
+        <nav class="links">
                 <a href="../index.html"> Home </a> 
                 <a href="#">Eventos Adversos</a>
                 <a href="documentos.html">Repositorio</a>
                 <a href="acreditacion.html">Acreditación</a>
                 <a href="gestion.html">Gestión</a>
                 <a href="iaas.html">IAAS</a>
-    </nav>
-</header>
+        </nav>
+    </header>
 
 
 <Main class="mainea">
-
-     <div class="container">
-        <h2>Notificación de Evento Adverso</h2>
-        <form action="submit" method="post">
+    <div class="eventosa">
+        <div>
+            <h1>Notificación de Evento Adverso</h1>
+            <form action="submit" method="post" class="post">
+            
 
                 <label for="anonimo">¿Reporte anónimo?</label>
             <div class="radio-group">
@@ -118,51 +119,48 @@
             <textarea id="acciones" name="acciones" rows="3"></textarea>
 
             <label for="sugerencias" class="spe-grid" >Sugerencias para la prevención del evento</label>
-            <textarea name="sugerencias" rows="3" id="">Sugerencias para evitar que suceda nuevamente este evento</textarea>
+            <textarea name="sugerencias" rows="3" id=""></textarea>
 
             <button type="submit">Enviar Reporte</button>
         </form>
-    </div>
+        
+        
+        </div>
 
-    <div class="grid text-center">
-                  <h2 class="g-col-6">Características del sistema de Notificación</h2>
-        <div class="g-col-6">
-            <div class="voluntario">
-                <h3>Voluntario</h3>
-                <img src="../medios/Voluntariopng.png" alt="">
-            </div>
-        </div>
-        <div class="g-col-6">            
-            <div class="confidencial">
-                <h3>Confidencial</h3>
-                <img src="../medios/Confidencial.png" alt="">
-            </div>
-        </div>
-        <div class="g-col-6">            
-            <div class="pasivo">
-                <h3>Pasivo</h3>
-                <img src="../medios/Pasivo.png" alt="">
-            </div>
-        </div>
-        <div class="g-col-6">            
-            <div class="no-punitivo">
-                <h3>No Punitivo</h3>
+        <div class=caracteristicas>
+                  <h2 class="caracteristicast">Características del sistema de Notificación</h2>
+            <div class="cajait">
+                <div class="iconotexto">
+                    <h3>Voluntario</h3>
+                    <img src="../medios/Voluntariopng.png" alt="">
+                </div>
+                <div class="iconotexto">            
+                    <h3>Confidencial</h3>
+                    <img src="../medios/Confidencial.png" alt="">
+                 </div>
+                <div class="iconotexto">          
+                    <h3>Pasivo</h3>
+                    <img src="../medios/Pasivo.png" alt="">
+                </div>
+                    <div class="iconotexto">          
+                    <h3>No Punitivo</h3>
                 <img src="../medios/No Punitovo.png" alt="">
+                </div>
             </div>
         </div>
+        </div>
     </div>
-
-        </Main>
+</Main>
 
 <footer>
 
     <nav class="footer-links">
-        <a href="https://www.clinicauandes.cl/">Clinica Universidad de los Andes</a>
-        <a href="contacto.html">Contacto</a>
+        <a class="linksf" href="https://www.clinicauandes.cl/">Clinica Universidad de los Andes</a>
+        <a class="linksf" href="contacto.html">Contacto</a>
     </nav>
         <div class="footer-logo">
         <img src="../medios/iadela.png" alt="Logo IAdela">
-    </div>
+        </div>
 </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>

@@ -34,56 +34,84 @@ body  {
     background-color: #221E39;
 }
 
-header {
+.logo {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    font-family: "DM Sans", sans-serif;
-    flex-wrap: wrap;
-    background-color: #C8D0DD;
+
 }
 
 .logo img {
-    width: 150px; 
+    width: 200px; 
     height: auto;
-}
-
-.nav-links a {
-    color: #221E39;
-    text-decoration: none;
+    justify-content: center;
     margin-left: 20px;
-    font-size: 18px;
-    font-family: "DM Sans", sans-serif;
-    flex-wrap: wrap;
 }
 
-.nav-links {
+header {
     display: flex;
-    font-family: "DM Sans", sans-serif;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
     flex-wrap: wrap;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 
-    .nav-links {
-        margin-top: 10px;
-    }
-
-    .nav-links a {
-        margin: 0 10px;
-    }
 }
 
-main img {
-object-fit: cover;
-height: 400px;
-width: 100%;
+
+.links a {
+  background: #A3BC5B;
+  border: none;
+  padding: 10px 20px;
+  display: flex;
+  font-size: 15px;
+  font-weight: 600;
+  width: auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-21deg);
+  justify-content: space-evenly;
+  text-decoration: none;
+  color: white;
+  font-family: "DM Sans", sans-serif;
+
+}
+
+span {
+  display: inline-block;
+  transform: skew(21deg);
+}
+
+.links a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: rgb(20, 20, 20);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.links a:hover {
+  color: #fff;
+}
+
+.links a:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 1;
 }
 
 
@@ -91,209 +119,174 @@ width: 100%;
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10px;
-    padding-right: 10px;
-    background-color:#221E39;
-    flex-wrap: wrap;
-    font-family: "DM Sans", sans-serif;
-    width: 100%;
-    height: max-content;
-    margin-top: 30px;
+    background-color: #333F48;
+    padding-top: 30px;
 }
 
-.footer-logo img {
-    width: 100px;
+footer img {
+    width: 80px; 
     height: auto;
+    justify-content: center;
+    margin: 20px;
 }
 
-.footer-links {
-    display: flex;
-}
-
-.footer-links a {
-    color: white;
-    text-decoration: none;
-    margin-left: 15px;
-    font-size: 16px;
-    font-family: "DM Sans", sans-serif;
-}
-
-@media (max-width: 768px) {
-    footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-links {
-        margin-top: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .footer-links a {
-        margin: 5px 10px;
-    }
-}
-
-/* Body */
-
-
-
-/* Página de eventos Adversos */
-        .container {
-            background:#221E39 ;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 500px;
-            font-family: "DM Sans", sans-serif;
-            margin: 20px;
-        }
-
-        h2 {
-            text-align: center;
-            color: white ;
-            font-family: "DM Sans", sans-serif;
-        }
-
-        label {
-            font-weight: 600;
-            display: block;
-            margin-top: 10px;
-            color: white;
-            font-family: "DM Sans", sans-serif;
-            width: 95%;
-        }
-
-        input, textarea, select {
-            width: 95%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 6px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-            font-family: "DM Sans", sans-serif;
-        }
-
-        input:focus, textarea:focus, select:focus {
-            border-color: #0072ff;
-            outline: none;
-            box-shadow: 0 0 5px rgba(0, 114, 255, 0.3);
-            font-family: "DM Sans", sans-serif;
-        }
-
-        .radio-group {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 10px;
-            font-family: "DM Sans", sans-serif;
-        }
-
-        button {
-            width: 95%;
-            background: #0072ff;
-            color: white;
-            padding: 12px;
-            font-size: 16px;
-            border: none;
-            border-radius: 6px;
-            margin-top: 15px;
-            font-family: "DM Sans", sans-serif;
-        }
-
-
-.mainea {
-    background-image: url(../medios/clinica.jpg);
-    background-position: center;
-    background-size: cover;
+.footerlinks {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
-}
-/*
-.eainformacion {
-    display: grid;
-    grid-template-areas: 
-    "caract caract"
-    "voluntario confidencial"
-    "pasivo no-punitivo";
-    grid-template-columns: 1fr 1fr;
-    font-family: "DM Sans", sans-serif;
-    text-align: center;
-    justify-content: center;
-    background-color: #221E39;
-    align-items: center;
-    height: 500px;
-    width: 550px;
-    border-radius: 10px; 
-}
-    */
+    flex-wrap: wrap;
+} 
 
-.voluntario img {
-    width: 180px;
-    height: 180px;
-    text-align: center;
-    justify-content: center;
-}
-
-.confidencial img {
-    width: 180px;
-    height: 180px;
-    text-align: center;
-    justify-content: center;
-}
-
-.pasivo img {
-    width: 180px;
-    height: 180px;
-    text-align: center;
-    justify-content: center;
-    margin-left: 20px;
-
-}
-
-.no-punitivo img {
-    width: 180px;
-    height: 180px;
-    text-align: center;
-    justify-content: center;
-}
-
-.g-col-6 {
+.linksf {
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px 15px 5px 15px;
     color: white;
-    backdrop-filter: blur(0.4rem);
+}
 
+/* Index */ 
+
+.card-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+.card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; 
+  display: block;
+}
+
+
+/* Página de eventos Adversos */
+.mainea {
+    background-image: url(../medios/clinica.jpg);
+    background-repeat: no-repeat;
+    background-image: center;
+    background-size: cover;
+}
+.eventosa {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: white;
+    background-color: #221E39;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    
+  }
+
+  .post input {
+    border-radius: 25px;
+    padding: 0 10px 0 10px;
+  }
+
+  .post textarea {
+    border-radius: 25px;
+    padding: 0 10px 0 10px;
+  }
+
+  .post button {
+    margin: 20px 0 10px 0;
+  }
+
+.eventosa h1 {
+    color: white;
+    background-color: #221E39;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 25px;
+}
+
+.caracteristicas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+    backdrop-filter: blur(10px);
+}
+
+.caracteristicas h2 {
+    color: white;
+    background-color: #221E39;
+    border-radius: 25px;
+    padding: 10px;
+}
+.cajait {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconotexto {
+    display: flex;
+    flex-direction: column;
+    background-color: #221E39;
+    margin: 5%;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
     
 }
 
+
+.iconotexto img{
+    width: 150px;
+    height: 150px;
+}
+
+
 /*Documentos */
 .documentos {   
-    background-image: url(../medios/clinica.jpg);
-    background-position: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    background-size: cover;
-    color: white;
-    flex-wrap: wrap;
-    height: 500px;
+ background-image: url(../medios/clinica.jpg);
+ background-size: cover;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: wrap;
+ justify-content: center;
+ text-align: center;
+ padding: 50px;
+ height: 500px;
+ color: white;
 }
-.documentos h2 {
-    justify-items: center;
-    backdrop-filter: blur(0.4rem);
 
-}
 ::selection {
     color: white;
     background-color: #221E39;
 }
 
+.titulodocumentos {
+ backdrop-filter: blur(10px);
+ border-radius: 15px;
+}
 
 .buscadord .search {
     width: 100%;
@@ -310,10 +303,13 @@ footer {
     font-size: 18px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
     background-color: #221E39;
+    padding: 20px;
+    opacity: 90%;
     
 }
 ::placeholder {
     color: white;
+
 }
 .search.active input {
     border-radius: 5px 5px 0 0;
@@ -321,7 +317,6 @@ footer {
 }
 .search .autocomplete {
     color: white;
-    padding: 0;
     opacity: 0;
     pointer-events: none;
     max-height: 280px;
@@ -333,38 +328,73 @@ footer {
 
 /* Acreditación nacional */
 
-.andivs {
+.fondoacreditacion {
     background-image: url(../medios/clinica\ 2.jpg);
-    background-position: center;
     background-size: cover;
+    height: 500px;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-    font-family: "DM Sans", sans-serif;
-    flex-wrap: wrap;
-}
-
-.andivs div {
-    margin: 150px 0 150px 0;
     justify-content: center;
-}
-
-.andivs div h3{
-    background-color: #221E39;
-    width: 120%;
-    border-radius: 10px;
+    flex-direction: column;
     text-align: center;
-    justify-content: center;
     flex-wrap: wrap;
 }
+
+.pushable {
+  position: relative;
+  background: transparent;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  outline-offset: 4px;
+  outline-color: deeppink;
+  transition: filter 250ms;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.front {
+  display: block;
+  position: relative;
+  border-radius: 8px;
+  background: #221E39;
+  padding: 16px 32px;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.pushable:hover {
+  filter: brightness(110%);
+}
+
+.pushable:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
+
+
+/* Contacto */
 
 .maincontacto {
     display: flex;
     justify-content: center;
     background-image: url(../medios/backcontacto.jpg);
-    background-position: center;
-    background-size: cover;
+    background-size: auto;
+
 
 }
 
@@ -378,6 +408,10 @@ footer {
     font-family: "DM Sans", sans-serif;
     margin: 20px;
     color: white;
+}
+
+.contacto textarea {
+    width: 400px;
 }
 
 
