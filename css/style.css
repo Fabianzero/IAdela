@@ -56,8 +56,6 @@ header {
     align-items: center;
     background-color: white;
     flex-wrap: wrap;
-    position: sticky;
-    top: 0;
 
 }
 
