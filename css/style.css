@@ -56,6 +56,9 @@ header {
     align-items: center;
     background-color: white;
     flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+
 }
 
 .links {
@@ -71,7 +74,7 @@ header {
 .links a {
   background: #A3BC5B;
   border: none;
-  padding: 10px 20px;
+  padding: 20px;
   display: flex;
   font-size: 15px;
   font-weight: 600;
@@ -83,7 +86,7 @@ header {
   text-decoration: none;
   color: white;
   font-family: "DM Sans", sans-serif;
-
+  margin: 1px;
 }
 
 span {
@@ -228,7 +231,7 @@ footer img {
     flex-direction: column;
     text-align: center;
     flex-wrap: wrap;
-    backdrop-filter: blur(10px);
+
 }
 
 .caracteristicas h2 {
@@ -243,6 +246,8 @@ footer img {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
 }
 
 .iconotexto {
@@ -411,7 +416,7 @@ footer img {
 }
 
 .contacto textarea {
-    width: 400px;
+    width: 200px;
 }
 
 
